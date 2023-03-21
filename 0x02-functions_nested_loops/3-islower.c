@@ -9,7 +9,7 @@
 
 int _islower(int c)
 {
-if(islower(c) == 1)
+if(c >= 61 || c <= 122)
 {
 return (1);
 }
