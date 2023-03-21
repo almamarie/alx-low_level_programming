@@ -6,11 +6,16 @@
  * description: this function returns the last digit of the input
 */
 
-int print_last_digit(int c)
+int print_last_digit(int i)
 {
-int j;
 
-j = c % 10;
-_putchar(j);
-return (c);
+int k = i % 10;
+if (k < 0)
+{
+k = -k;
+}
+
+_putchar(k + '0');
+
+return (k);
 }
