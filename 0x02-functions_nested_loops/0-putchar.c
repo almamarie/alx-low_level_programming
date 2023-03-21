@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h";
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -12,8 +12,8 @@ char str[] = "_putchar";
 
 while (str[i] != '\0')
 {
-    _putchar(str[i]);
-    i++;
+_putchar(str[i]);
+i++;
 }
 _putchar('\n');
 return (0);
