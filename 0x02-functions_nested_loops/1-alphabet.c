@@ -2,13 +2,15 @@
 
 /**
  * main - entry point
- * Return: success 0, failure 1
- * description: prints the alphabets in lower case
+ * Return: on success, 0, on error, 1
+ * description: prints the alphabets in lowercase
 */
 
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-
-return (0);
+char i;
+for (i = 'a'; i <= 'z'; i++)
+{
+_putchar(i);
+}
 }
