@@ -20,9 +20,10 @@ fib[i] = fib[i - 1] + fib[i - 2];
 
 for (i = 0; i < 35; i++)
 {
-if (fib[i] < 4000000)
+if ((fib[i] < 4000000) && (fib[i] % 2 == 0))
 {
 acc += fib[i];
+
 }
 }
 
