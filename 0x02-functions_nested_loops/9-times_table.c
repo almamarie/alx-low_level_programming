@@ -23,25 +23,27 @@ first_number = multiple / 10;
 
 if (first_number == 0)
 {
-_putchar((multiple)+'0');
-
-if ((current_number + 1) < 10)
+if (((current_number) < 10) && multiple != 0)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
+_putchar((multiple)+'0');
+
+
 }
 else
 {
-_putchar((first_number) +'0');
-_putchar((multiple % 10) + '0');
-
-if ((current_number + 1) < 10)
+if ((current_number) < 10 && multiple != 0)
 {
 _putchar(',');
 _putchar(' ');
 }
+_putchar((first_number) +'0');
+_putchar((multiple % 10) + '0');
+
+
 }
 }
 _putchar('\n');
