@@ -31,7 +31,7 @@ acc += fib[i];
 
 
 
-printf("%lu \n", acc);
+printf("%lu\n", acc);
 
 return (0);
 }
