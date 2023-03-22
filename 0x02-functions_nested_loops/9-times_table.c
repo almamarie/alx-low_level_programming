@@ -23,7 +23,7 @@ first_number = multiple / 10;
 
 if (first_number == 0)
 {
-if (((current_number) < 10) && multiple != 0)
+if (((current_number) < 10) && (multiple != 0))
 {
 _putchar(',');
 _putchar(' ');
@@ -48,4 +48,16 @@ _putchar((multiple % 10) + '0');
 }
 _putchar('\n');
 }
+}
+
+
+/**
+ * print_0 - entry point
+ * Return: void
+ * description: prints the 0 times table
+*/
+
+void print_0(void)
+{
+    
 }
