@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * add - entry point
+ * print_to_98 - entry point
  * Return: void
  * @n: integer input
- * description: adds two numbers
+ * description: prints all natural numbers from n to 98, followed by a new line
 */
 
 void print_to_98(int n)
