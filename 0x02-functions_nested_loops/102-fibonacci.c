@@ -7,23 +7,24 @@
 
 int main(void)
 {
-int prev = 1;
-int curr = 1;
-long fib;
-int counter = 0;
-printf("1, ");
-while(counter < 50)
+int i;
+long fib[50];
+fib[0] = 1;
+fib[1] = 2;
+for (i =2; i < 50; i++)
 {
-fib = prev + curr;
-printf("%lu", fib);
-if (counter + 1 < 50)
+fib[i] = fib[i-1] + fib[i-2];
+}
+
+for (i = 0; i < 50; i++)
+{
+printf("%lu", fib[i]);
+if (i != 49)
 {
 printf(", ");
 }
-prev = curr;
-curr = fib;
-counter++;
 }
+
 printf("\n");
 return (0);
 }
