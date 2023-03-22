@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * add - entry point
@@ -10,45 +10,33 @@
 void print_to_98(int n)
 {
 int i;
-int hun_rem;
+
+if (n == 98)
+printf("98");
+
 if (n < 98)
 {
 for (i = n; i < 99; i++)
 {
-if(i > -10 && i < 10)
+printf("%d", i);
+if (i < 98)
 {
-_putchar(i + '0');
+printf(", ");
 }
-else
-{
- _putchar((i / 10) + '0');
- _putchar((i % 10) + '0');
-}
-_putchar(',');
-_putchar(' ');
 }
 }
 
-if (n >= 98 && n < 100)
+if (n > 98)
 {
 for (i = n; i > 97; i--)
 {
- _putchar((i / 10) + '0');
- _putchar((i % 10) + '0');
+printf("%d", i);
+if (i > 98)
+{
+printf(", ");
+}
 }
 }
 
-if (n >= 100)
-{
-for (i = n; i != 97; i--)
-{
-hun_rem = i /10;
-_putchar((i / 100) + '0');
-_putchar((hun_rem / 10) + '0');
-_putchar((hun_rem % 10) + '0');
-_putchar(',');
-_putchar(' ');
-}
-}
-_putchar('\n');
+printf("\n");
 }
