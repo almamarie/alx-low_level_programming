@@ -14,14 +14,14 @@ unsigned long int curr = 2;
 
 printf("1, 2, ");
 
-for (i = 2; i < 98; i++)
+for (i = 2; i < 99; i++)
 {
 fib = prev + curr;
 prev = curr;
 curr = fib;
 
 printf("%lu", fib);
-if (i != 97)
+if (i != 98)
 {
 printf(", ");
 }
