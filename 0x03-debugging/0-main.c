@@ -14,10 +14,5 @@ int result;
 i = 0;
 result = positive_or_negative(i);
 
-if (result == 0)
-{
-printf("0 is zero", result);
-}
-
 return (0);
 }
