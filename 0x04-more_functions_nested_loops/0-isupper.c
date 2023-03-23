@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * _isupper - entry point
@@ -10,5 +9,10 @@
 
 int _isupper(int c)
 {
-return (isupper(c));
+if(c >= 65 && c <= 90)
+{
+return (1);
+}
+
+return (0);
 }
