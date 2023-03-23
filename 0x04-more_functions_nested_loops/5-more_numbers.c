@@ -18,10 +18,8 @@ for (i = 0; i < 15; i++)
 if (i > 9)
 {
 _putchar((i / 10) + '0');
-_putchar((i % 10) + '0');
-continue;
 }
-_putchar(i + '0');
+_putchar((i % 10) + '0');
 }
 _putchar('\n');
 }
