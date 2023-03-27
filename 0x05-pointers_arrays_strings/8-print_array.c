@@ -4,7 +4,7 @@
 /**
  * print_array - entry point
  * Return: void
- * description: prints n elements of an array of 
+ * description: prints n elements of an array of
  * integers, followed by a new line.
  * @a: *char[] input
  * @n: the number of elements to print
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 {
 int i;
 
-if (n > 0)
+if (n < 0)
 {
 printf("\n");
 return;
