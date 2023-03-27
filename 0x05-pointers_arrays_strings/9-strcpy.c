@@ -2,16 +2,16 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * print_array - entry point
+ * _strcpy - entry point
  * Return: a pointer to an array
  * description: concatenates a string
- * @a: *char[] input
- * @n: the number of elements to print
+ * @dest: destination of the concat
+ * @src: source of the concatenation
 */
 
 char *_strcpy(char *dest, char *src)
 {
 strcpy(dest, src);
 
-return dest;
+return (dest);
 }
