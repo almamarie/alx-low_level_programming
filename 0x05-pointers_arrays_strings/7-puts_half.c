@@ -15,9 +15,20 @@ int str_len;
 
 str_len = strlen(str);
 
+if (str_len % 2 == 0)
+{
 for (i = str_len / 2; i < str_len; i++)
 {
 _putchar(str[i]);
 }
+} 
+else 
+{
+for (i = ((str_len - 1) / 2); i < str_len; i++)
+{
+_putchar(str[i]);
+}
+}
 _putchar('\n');
+
 }
