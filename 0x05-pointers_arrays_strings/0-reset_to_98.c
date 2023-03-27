@@ -5,6 +5,7 @@
  * Return: void
  * description: receives a pointer and
  * resets the valuse to 98.
+ * @n: a pointer value
 */
 
 
