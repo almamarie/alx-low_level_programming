@@ -5,6 +5,7 @@
  * Return: void
  * description: prints every other character of a string,
  * starting with the first character, followed by a new line
+ * @str: char[] input
 */
 
 void puts2(char *str)
