@@ -3,7 +3,7 @@
  * _puts - entry point
  * Return: void
  * description: prints a string to stdout
- * @str: an array of char
+ * @str: an array of chars
 */
 
 void _puts(char *str)
