@@ -1,9 +1,9 @@
 #include <string.h>
 
 /**
- * _strcat - entry bpoint
+ * _strncat - entry bpoint
  * Return: *char[]
- * description: concatinates 2 strings
+ * description: concatinates 2 strings up to n bytes
  * @dest: destination char[] pointer
  * @src: source char[] pointer
  * @n: the maximum number of characters to be appended.
