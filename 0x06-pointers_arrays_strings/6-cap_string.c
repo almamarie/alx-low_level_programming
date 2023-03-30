@@ -5,40 +5,33 @@
  * description: capitalizes a string
 */
 
-
-char *cap_string(char *a)
+char *cap_string(char *str)
 {
-int i;
+	int index = 0;
 
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
-i = 0;
-while (a[i] != '\0')
-{
-i++;
-while (a[i] > 96 && a[i] < 123){
-        if (a[i - 1] == ' ' ||
-		    a[i - 1] == '\t' ||
-		    a[i - 1] == '\n' ||
-		    a[i - 1] == ',' ||
-		    a[i - 1] == ';' ||
-		    a[i - 1] == '.' ||
-		    a[i - 1] == '!' ||
-		    a[i - 1] == '?' ||
-		    a[i - 1] == '"' ||
-		    a[i - 1] == '(' ||
-		    a[i - 1] == ')' ||
-		    a[i - 1] == '{' ||
-		    a[i - 1] == '}' ||
-		    i == 0)
-            {
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
 
-a[i] -= 32;
-}
-i++;
-}
+		index++;
+	}
 
-
-}
-
-return (a);
+	return (str);
 }
