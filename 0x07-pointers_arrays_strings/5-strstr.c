@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <string.h>
 /**
  * _strstr -  searches a string for any of a set of bytes
  * @haystack: src string
@@ -10,14 +11,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 
-while (*haystack)
-{
-if (*haystack == *needle)
-{
-return (needle);
-}
-haystack++;
-}
+return (strstr(haystack, needle));
 
-return (NULL);
 }
