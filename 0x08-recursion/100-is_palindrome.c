@@ -9,7 +9,7 @@ int length(char *s)
 {
 if (*s == '\0')
 {
-return 0;
+return (0);
 }
 
 return (1 + length(s + 1));
@@ -17,8 +17,10 @@ return (1 + length(s + 1));
 
 
 /**
- * is_palindrome - check is @s is a palindrome
+ * palindrome_check - check is @s is a palindrome
  * @s: input string
+ * @i: iterator
+ * @len: length of string to check
  * Return: 1 true, 0 otherwise
 */
 
