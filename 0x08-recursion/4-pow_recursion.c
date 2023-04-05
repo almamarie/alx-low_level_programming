@@ -1,5 +1,8 @@
 /**
- * 
+ * _pow_recursion - returns the power of x and y
+ * @x: multiplier
+ * @y: power
+ * Return: integer
 */
 
 int _pow_recursion(int x, int y)
