@@ -1,3 +1,9 @@
+/**
+ * is_prime - check if input is prime
+ * @n: input number
+ * @v: iterator
+ * Return: (1) if true else (0)
+*/
 
 
 int is_prime(int n, int v)
