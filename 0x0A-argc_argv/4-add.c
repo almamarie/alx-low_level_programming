@@ -26,13 +26,14 @@
 	}
 
 
-	/**
-	 * main - Print the name of the program
-	 * @argc: Count arguments
-	 * @argv: Arguments
-	 * description: Print the name of the program
-	 * Return: Always 0 (Success)
-	 */
+/**
+ * main - Print the name of the program
+ * main - multiplies two numbers
+ * @argc: Count arguments
+ * @argv: Arguments
+ * Description: Print the name of the program
+ * Return: Always 0 (Success)
+ */
 
 int main(int argc, char *argv[])
 	{
