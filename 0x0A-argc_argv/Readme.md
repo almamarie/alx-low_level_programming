@@ -1,1 +1,1 @@
-# C main function arguements
+# C main function arguements tutorial
