@@ -1,16 +1,29 @@
-#include <stddef.h>
-#include <string.h>
+#include "main.h"
 /**
- * _strstr -  searches a string for any of a set of bytes
- * @haystack: src string
- * @needle: substring to locate
- * Return: a pointer to the beginning of the located
- * substring or NULL if the substring is not found.
-*/
-
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
+ */
 char *_strstr(char *haystack, char *needle)
 {
+	for (; *haystack != '\0'; haystack++)
+	{
+		char *l = haystack;
+		char *p = needle;
 
-return (strstr(haystack, needle));
 
+		while (*l == *p && *p != '\0')
+		{
+			l++;
+			p++;
+		}
+
+
+		if (*p == '\0')
+			return (haystack);
+	}
+
+
+	return (0);
 }

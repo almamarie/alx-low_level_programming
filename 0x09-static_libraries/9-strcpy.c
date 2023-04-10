@@ -1,17 +1,25 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
-/**
- * _strcpy - entry point
- * Return: a pointer to an array
- * description: concatenates a string
- * @dest: destination of the concat
- * @src: source of the concatenation
-*/
 
+/**
+ * char *_strcpy - a function that copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
+ */
 char *_strcpy(char *dest, char *src)
 {
-strcpy(dest, src);
+	int l = 0;
+	int x = 0;
 
-return (dest);
+
+	while (*(src + l) != '\0')
+	{
+		l++;
+	}
+	for ( ; x < l ; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[l] = '\0';
+	return (dest);
 }
