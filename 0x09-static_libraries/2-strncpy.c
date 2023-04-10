@@ -1,16 +1,29 @@
-#include <string.h>
-
+#include "main.h"
 /**
- * _strncpy - entry bpoint
- * Return: *char[]
- * description: concatinates 2 strings up to n bytes
- * @dest: destination char[] pointer
- * @src: source char[] pointer
- * @n: the maximum number of characters to be appended.
-*/
-
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
-strncpy(dest, src, n);
-return (dest);
+	int j;
+
+
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+
+	return (dest);
 }
