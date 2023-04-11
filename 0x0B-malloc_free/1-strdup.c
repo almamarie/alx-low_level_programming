@@ -12,7 +12,7 @@ int _size(char *s)
 {
 int size;
 size = strlen(s);
-return (size);
+return (size + 1);
 }
 
 
@@ -30,7 +30,7 @@ int size;
 
 size = _size(str);
 
-if (size <= 0 || str == NULL)
+if (size <= 0)
 {
 return (NULL);
 }
