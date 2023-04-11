@@ -97,6 +97,6 @@ i++;
 j++;
 }
 
-result[size1 + size2] = '\n';
+result[size1 + size2 - 1] = '\n';
 return result;
 }
