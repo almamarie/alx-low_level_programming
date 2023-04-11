@@ -1,1 +1,1 @@
-# C main function arguements tutorial
+# argc & argv

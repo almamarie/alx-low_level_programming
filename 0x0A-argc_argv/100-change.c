@@ -1,48 +1,50 @@
+#include <stdlib.h>
 #include <stdio.h>
 
-#include <stdlib.h>
-
-#include "main.h"
-
-
-
 /**
- * main - prints the minimum number of coins to
- * make change for an amount of money
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - Print the minimum number of coins to make change of money,
+ * We can use an unlimited number of coins of values 25,10, 5, 2 and 1 cents.
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: 0 (Success), 1 (Error)
+ * Return: 1 if Error, Succes otherwise.
  */
-
-int main(int argc, char *argv[])
-
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int num, j, result;
+	int money, coins = 0;
 
-	int coins[] = {25, 10, 5, 2, 1};
-
-	if (argc != 2)
+	if (argv[1] == NULL || argv[2] != NULL)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num = atoi(argv[1]);
-	result = 0;
-	if (num < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-	for (j = 0; j < 5 && num >= 0; j++)
-	{
-		while (num >= coins[j])
-		{
-			result++;
-			num -= coins[j];
-		}
-	}
-	printf("%d\n", result);
-	return (0);
 
+	money = atoi(argv[1]);
+	if (money / 25 > 0)
+	{
+		coins += money / 25;
+		money %= 25;
+	}
+	if (money / 10 > 0)
+	{
+		coins += money / 10;
+		money %= 10;
+	}
+	if (money / 5 > 0)
+	{
+		coins += money / 5;
+		money %= 5;
+	}
+	if (money / 2 > 0)
+	{
+		coins += money / 2;
+		money %= 2;
+	}
+	if (money == 1)
+	{
+		coins += 1;
+		money = 0;
+	}
+	printf("%d\n", coins);
+	return (EXIT_SUCCESS);
 }
