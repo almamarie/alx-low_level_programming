@@ -30,7 +30,7 @@ int size;
 
 size = _size(str);
 
-if (size <= 0)
+if (size <= 0 || !str)
 {
 return (NULL);
 }
