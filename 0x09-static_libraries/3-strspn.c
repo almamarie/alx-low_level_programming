@@ -1,29 +1,31 @@
 #include "main.h"
+
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strspn - Count number of bytes in s that consist only of accept characters
+ * @s: String within we search
+ * @accept: The accepted characters
+ *
+ * Return: The number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	unsigned int num = 0;
+	int i, j;
 
-
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (r = 0; accept[r]; r++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[r])
+			if (s[i] == accept[j])
 			{
-				n++;
+				num++;
 				break;
 			}
-			else if (accept[r + 1] == '\0')
-				return (n);
 		}
-		s++;
+		if (s[i] != accept[j])
+			break;
 	}
-	return (n);
+
+	return (num);
 }
+
