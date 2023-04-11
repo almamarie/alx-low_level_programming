@@ -54,41 +54,33 @@ int size1;
 int size2;
 int i, j;
 char *result;
-
 if (s1 == NULL)
 {
 s1 = "";
 }
-
 if (s2 == NULL)
 {
 s2 = "";
 }
-
 size1 = _size(s1);
 size2 = _size(s2);
-
 if (s1 == 0 && s2 == 0)
 {
 result = malloc(sizeof(char));
 result[0] = '\0';
 return (result);
 }
-
-result = malloc((size1 + size2) * (sizeof(char)));
-
+result = malloc((size1 + size2 - 1) * (sizeof(char)));
 if (result == NULL)
 {
 return (NULL);
 }
-
 i = 0;
 while (s1[i] != '\0')
 {
 result[i] = s1[i];
 i++;
 }
-
 j = 0;
 while (s2[j] != '\0')
 {
@@ -96,7 +88,6 @@ result[i] = s2[j];
 i++;
 j++;
 }
-
 result[size1 + size2 - 1] = '\n';
-return result;
+return (result);
 }
