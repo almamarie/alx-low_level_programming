@@ -5,22 +5,28 @@
 
 
 /**
- * main - print the number of arguments passed to the program
+ * main - prints all arguments it receives
  * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: Always 0 (Success)
  */
 
-
-
 int main(int argc, char *argv[])
 
 {
 
-(void) argv; /*Ignore argv*/
+	int i;
 
-	printf("%d\n", argc - 1);
+
+
+	for (i = 0; i < argc; i++)
+
+	{
+
+		printf("%s\n", argv[i]);
+
+	}
 
 
 
