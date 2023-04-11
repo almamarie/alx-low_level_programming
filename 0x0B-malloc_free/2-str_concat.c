@@ -60,7 +60,9 @@ size2 = s2 == NULL ? 0 : _size(s2);
 
 if (s1 == 0 && s2 == 0)
 {
-return (NULL);
+result = malloc(sizeof(char));
+result[0] = '\0';
+return (result);
 }
 
 if (size1 > 0 && size2 > 0)
@@ -83,5 +85,6 @@ result = malloc(size2 * (sizeof(char)));
 _concat(result, 0, s2, size2);
 }
 
+result[size1 + size2] = '\n';
 return (result);
 }
