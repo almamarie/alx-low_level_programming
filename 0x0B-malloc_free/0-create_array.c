@@ -13,7 +13,7 @@ unsigned int i;
 
 if (size < 1)
 {
-return NULL;
+return (NULL);
 }
 
 i = 0;
@@ -21,7 +21,7 @@ s = malloc(size * sizeof(char));
 
 if (s == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 while (i < size)
@@ -30,5 +30,5 @@ s[i] = c;
 i++;
 }
 
-return s;
+return (s);
 }
