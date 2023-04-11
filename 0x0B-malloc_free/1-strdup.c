@@ -28,9 +28,14 @@ int i;
 char *s;
 int size;
 
+if (str == NULL)
+{
+return (NULL);
+}
+
 size = _size(str);
 
-if (size <= 0 || !str)
+if (size <= 0)
 {
 return (NULL);
 }
