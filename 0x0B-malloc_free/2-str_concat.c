@@ -99,26 +99,4 @@ j++;
 
 result[size1 + size2] = '\n';
 return result;
-// if (size1 > 0 && size2 > 0)
-// {
-// size3 = size1 + size2;
-// result = malloc(size3 * (sizeof(char)));
-// _concat(result, 0, s1, size1);
-// _concat(result, size1, s2, (size1 + size2));
-// }
-
-// if (size1 > 0 && size2 <= 0)
-// {
-// result = malloc(size1 * (sizeof(char)));
-// _concat(result, 0, s1, size1);
-// }
-
-// if (size1 <= 0 && size2 > 0)
-// {
-// result = malloc(size2 * (sizeof(char)));
-// _concat(result, 0, s2, size2);
-// }
-
-// result[size1 + size2 + 1] = '\0';
-// return (result);
 }
