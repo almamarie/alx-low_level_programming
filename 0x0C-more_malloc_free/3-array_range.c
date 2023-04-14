@@ -18,7 +18,7 @@ return (NULL);
 }
 
 range = max - min + 1;
-array = malloc((range + 1) * sizeof(int));
+array = malloc((range) * sizeof(int));
 
 if (array == NULL)
 {
