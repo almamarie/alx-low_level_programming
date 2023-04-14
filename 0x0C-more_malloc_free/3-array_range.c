@@ -19,19 +19,13 @@ return (NULL);
 }
 
 range = max - min + 1;
-array = malloc(range * sizeof(int));
+array = malloc((range) *(sizeof(int)));
 
 if (array == NULL)
 {
 return (NULL);
 }
 
-/*
-for (; range > 0; range--)
-{
-array[range - 1] = range - 1;
-}
-*/
 
 for (i = 0, j = min; i < range; i++, j++)
 {
