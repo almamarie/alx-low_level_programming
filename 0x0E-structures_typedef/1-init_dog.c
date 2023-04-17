@@ -13,7 +13,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (!d)
 {
-exit(EXIT_FAILURE);
+return;
 }
 
 (*d).name = malloc(strlen(name) * sizeof(char));
