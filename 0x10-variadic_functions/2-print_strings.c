@@ -17,9 +17,10 @@ va_start(ap, n);
 
 for (i = 0; i < n; i++)
 {
-if (i == (n - 1))
+if (i == n)
 {
-printf("%s", va_arg(ap, char*));
+printf("%s%s", va_arg(ap, char*), separator);
+
 }
 else
 {
