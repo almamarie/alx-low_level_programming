@@ -1,5 +1,5 @@
 section .data
-    msg: db 'Hello, Holberton!\n', 10, 0
+    msg: db 'Hello, Holberton\n', 10, 0
 
 section .text
     extern printf
