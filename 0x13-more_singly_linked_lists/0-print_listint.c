@@ -3,7 +3,7 @@
 
 /**
  * print_listint - prints the elements in a list
- * @h: the linkedlist
+ * @head: the linkedlist
  * Return: the size of the list
 */
 
