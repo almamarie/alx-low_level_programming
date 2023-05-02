@@ -7,15 +7,16 @@
  * Return: the size of the list
 */
 
-size_t print_listint(const listint_t *h)
+size_t print_listint(const listint_t *head)
 {
-	size_t num = 0;
+	size_t nodes = 0;
 
-	while (h != NULL)
+	while (head)
 	{
-		printf("%d\n", h->n);
-		num++;
-		h = h->next;
+		printf("%d\n", head->n);
+		head = head->next;
+		nodes++;
 	}
-	return (num);
+
+	return (nodes);
 }
